@@ -1,0 +1,14 @@
+.chat-button{position:fixed;right:25px;bottom:25px;width:62px;height:62px;border:0;border-radius:50%;background:#1c3557;color:white;font-size:28px;cursor:pointer;box-shadow:0 8px 25px #0004;z-index:9999}
+.chat-window{position:fixed;right:25px;bottom:100px;width:380px;height:560px;background:white;border-radius:16px;box-shadow:0 15px 50px #0004;overflow:hidden;display:none;flex-direction:column;z-index:9998}
+.chat-window.open{display:flex}
+.chat-header{background:#1c3557;color:white;padding:18px;display:flex;justify-content:space-between}
+.chat-title{font-weight:bold}.chat-subtitle{font-size:12px;opacity:.8}
+.chat-close{background:0;border:0;color:white;font-size:22px;cursor:pointer}
+.chat-messages{flex:1;padding:18px;overflow-y:auto;background:#f5f6f8}
+.message{max-width:85%;padding:11px 14px;margin-bottom:12px;border-radius:12px;font-size:14px;line-height:1.5;white-space:pre-wrap}
+.message.bot{background:white;border:1px solid #e5e5e5}
+.message.user{background:#1c3557;color:white;margin-left:auto}
+.chat-input-area{display:flex;padding:12px;border-top:1px solid #ddd}
+.chat-input{flex:1;border:1px solid #ccc;border-radius:10px;padding:10px}
+.chat-send{margin-left:8px;border:0;border-radius:10px;padding:0 16px;background:#1c3557;color:white}
+@media(max-width:600px){.chat-window{right:10px;bottom:85px;width:calc(100% - 20px);height:calc(100vh - 120px)}.chat-button{right:15px;bottom:15px}}
